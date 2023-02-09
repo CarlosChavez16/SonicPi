@@ -1,4 +1,4 @@
-use_bpm 168
+use_bpm 160
 use_synth :blade
 use_sample_defaults amp: 3
 
@@ -22,4 +22,8 @@ live_loop :Stranger do
   sleep 0.5
 end
 
+live_loop :Glow do
+  sample :elec_bell, amp: 1, beat_stretch: 3
+  sleep 10
+end
 
