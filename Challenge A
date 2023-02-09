@@ -1,0 +1,58 @@
+#snare two times
+
+sample :drum_snare_soft
+sleep 2
+sample :drum_snare_soft
+sleep 2
+
+
+#kick four times
+sample :drum_heavy_kick, amp: 2
+sleep 1
+sample :drum_heavy_kick, amp: 2
+sleep 1
+sample :drum_heavy_kick, amp: 2
+sleep 1
+sample :drum_heavy_kick, amp: 2
+sleep 1
+
+#cymbal eight times
+sample :drum_cymbal_closed
+sleep 0.5
+sample :drum_cymbal_closed
+sleep 0.5
+sample :drum_cymbal_closed
+sleep 0.5
+sample :drum_cymbal_closed
+sleep 0.5
+sample :drum_cymbal_closed
+sleep 0.5
+sample :drum_cymbal_closed
+sleep 0.5
+sample :drum_cymbal_closed
+sleep 0.5
+sample :drum_cymbal_closed
+sleep 0.5
+
+sample :drum_splash_hard, sustain: 3
+sample :drum_cymbal_hard, sustain: 3
+sample :drum_cowbell, sustain: 3
+
+
+
+live_loop :DCC do
+  sample :drum_cymbal_closed
+  sleep 0.5
+end
+
+live_loop :DHK do
+  sample :drum_heavy_kick
+  sleep 1
+end
+
+live_loop :DSS do
+  sample :drum_snare_soft
+  sleep 2
+end
+
+
