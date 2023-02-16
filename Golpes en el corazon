@@ -1,0 +1,33 @@
+# Golpes en el corazon
+
+use_bpm 105
+
+use_synth :bass_foundation
+
+
+live_loop :Acordeon do
+  
+  6.times do
+    play :b4
+    sleep 0.5
+  end
+  stop
+end
+
+sleep 3
+
+live_loop :SegundoAcordeon do
+  3.times do
+    play :g4
+    sleep 1
+  end
+  stop
+end
+
+
+
+
+
+
+
+
