@@ -1,0 +1,49 @@
+# Lose Yourself- Eminem
+
+lose_yourself = "C:/Users/Carlos Chavez/Downloads/lose_yourself.wav"
+
+
+sample lose_yourself
+sleep 29
+c = 1
+use_bpm 110
+use_synth :piano
+
+
+live_loop :FirstNote do
+  1.times do
+    play :c4
+    sleep c
+    play :f5
+    sleep c
+    play :e5
+    sleep c
+    play :c4
+    sleep c
+    play :g5
+    sleep c
+    play :f5
+    sleep c
+    play :e5
+    sleep c
+    play :g5
+    sleep c
+  end
+  stop
+end
+
+live_loop :FirstNoteBackgroundNoise do
+  1.times do
+    play :b4
+    sleep c
+    play :e5
+    sleep c
+    play :d4
+    rest 1
+    play :a4
+    sleep c
+    play :c5
+    
+  end
+  stop
+end
