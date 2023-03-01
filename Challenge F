@@ -1,0 +1,55 @@
+#Challenge F
+num = 1 #start at 1!
+
+
+puts(num)
+sleep 0.5
+num = num + 1 #num = 1 + 1
+
+
+puts(num)
+sleep 0.5
+num = num + 1 #num = 2 + 1
+
+
+puts(num)
+sleep 0.5
+num = num + 1 #num = 3 + 1
+
+
+puts(num)
+sleep 0.5
+num = num + 1 #num = 4 + 1
+
+
+puts(num)
+sleep 0.5
+num = num + 1 #num = 5 + 1
+
+
+puts(num)
+sleep 0.5
+num = num + 1 #num = 6 + 1
+
+
+puts(num)
+sleep 0.5
+num = num + 1 #num = 7 + 1
+
+
+puts(num)
+sleep 0.5
+num = num + 1 #num = 8 + 1
+
+
+puts(num)
+sleep 0.5
+num = num + 1 #num = 9 + 1
+
+
+puts(num)
+sleep 0.5
+num = num + 1 #num = 10 + 1
+
+
+puts("HAPPY NEW YEAR!")
