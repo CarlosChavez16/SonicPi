@@ -4,7 +4,6 @@ lose_yourself = "C:/Users/Carlos Chavez/Downloads/lose_yourself.wav"
 
 
 sample lose_yourself
-sleep 1
 
 y = 1.5
 
@@ -22,6 +21,43 @@ use_synth :piano
 
 live_loop :FirstNote do
   1.times do
+    play :c4 ,amp: 0.20
+    sleep c
+    play :f5 ,amp: 0.20
+    sleep c
+    play :d5 ,amp: 0.20
+    sleep c
+    play :c4 ,amp: 0.30
+    sleep c
+    
+    play :g5 ,amp: 0.20
+    sleep c
+    play :e5 ,amp: 0.20
+    sleep c
+    play :c5 ,amp: 0.20
+    sleep c
+    play :g5 ,amp: 0.30
+    sleep c
+    
+    play :c4 ,amp: 0.20
+    sleep c
+    play :f5 ,amp: 0.20
+    sleep c
+    play :d5 ,amp: 0.20
+    sleep x
+    
+    play :d5 ,amp: 0.30
+    sleep x
+    
+    play :c4
+    sleep m
+    play :c4
+    sleep m
+    play :c4
+    sleep m
+    play :g5
+    sleep m
+    
     play :c4
     sleep c
     play :f5
@@ -42,49 +78,13 @@ live_loop :FirstNote do
     
     play :c4
     sleep c
-    play :f5
-    sleep c
-    play :d5
-    sleep x
-    
-    play :d5
-    sleep x
-    
-    play :c4
-    sleep m
-    play :c4
-    sleep m
-    play :c4
-    sleep m
-    play :g5
-    sleep m
-    
-    play :c4
-    sleep c
-    play :f5
-    sleep c
-    play :d5
-    sleep c
-    play :c4
-    sleep c
-    
-    play :g5
-    sleep c
-    play :e5
-    sleep c
-    play :c5
-    sleep c
-    play :g5
-    sleep c
-    
-    play :c4
-    sleep c
     play :d5
     sleep c
     play :f5
     sleep c
     play :d5
     sleep x
+    
     
     
     
@@ -104,6 +104,48 @@ live_loop :FirstNote do
     play :f4
     sleep r
     
+    play :b4
+    sleep c
+    play :f4
+    sleep c
+    play :a4
+    sleep c
+    
+    play :g4
+    sleep c
+    play :d4
+    sleep c
+    play :c4
+    sleep c
+    
+    play :g5
+    sleep x
+    play :e5
+    sleep x
+    
+    play :g5
+    sleep x
+    play :e4
+    sleep x
+    
+    play :a4
+    sleep c
+    play :bb4
+    sleep c
+    
+    play :c5
+    sleep r
+    play :g4
+    sleep r
+    play :e4
+    sleep r
+    
+    play :g5
+    sleep c
+    play :f5
+    sleep c
+    
+    
     # Everything before line 107 is correct
     
   end
@@ -112,32 +154,32 @@ end
 
 live_loop :FirstNoteBackgroundNoise do
   1.times do
-    play :d3
+    play :d3 ,amp: 0.20
     sleep c
-    play :e3
+    play :e3 ,amp: 0.20
     sleep c
-    play :a3
+    play :a3 ,amp: 0.30
     sleep x
     
     
-    play :c3
+    play :c3 ,amp: 0.20
     sleep c
-    play :e3
+    play :e3 ,amp: 0.20
     sleep c
-    play :g3
+    play :g3 ,amp: 0.30
     sleep x
     
-    play :b2
+    play :bb2 ,amp: 0.20
     sleep c
-    play :f3
+    play :f3 ,amp: 0.20
     sleep c
-    play :a3
+    play :a3 ,amp: 0.30
     sleep x
     
-    play :f3
+    play :f3 ,amp: 0.20
     sleep x
     
-    play :d3
+    play :d3 ,amp: 0.30
     sleep c
     play :e3
     sleep c
@@ -161,6 +203,7 @@ live_loop :FirstNoteBackgroundNoise do
     play :g3
     sleep r
     
+    
     play :g2
     sleep c
     play :d3
@@ -169,6 +212,34 @@ live_loop :FirstNoteBackgroundNoise do
     sleep c
     play :b3
     sleep c
+    
+    play :g2
+    sleep c
+    play :c3
+    sleep c
+    play :f3
+    sleep c
+    play :a3
+    sleep c
+    
+    play :e2
+    sleep c
+    play :b2
+    sleep c
+    play :d3
+    sleep x
+    
+    play :f3
+    sleep c
+    
+    play :a2
+    sleep c
+    play :e3
+    sleep c
+    play :g3
+    sleep x
+    
+    
     
     # Everything before line 173 is correct
   end
