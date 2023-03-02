@@ -6,6 +6,8 @@ lose_yourself = "C:/Users/Carlos Chavez/Downloads/lose_yourself.wav"
 sample lose_yourself
 sleep 1
 
+y = 1.5
+
 x = 2
 
 m = 0.5
@@ -81,8 +83,10 @@ live_loop :FirstNote do
     sleep c
     play :f5
     sleep c
-    play :f5
+    play :d5
     sleep x
+    
+    
     
     play :d5
     sleep c
@@ -93,6 +97,14 @@ live_loop :FirstNote do
     play :d5
     sleep c
     
+    play :c5
+    sleep r
+    play :a4
+    sleep r
+    play :f4
+    sleep r
+    
+    # Everything before line 107 is correct
     
   end
   stop
@@ -153,11 +165,12 @@ live_loop :FirstNoteBackgroundNoise do
     sleep c
     play :d3
     sleep c
-    play :f3
+    play :g3
     sleep c
     play :b3
     sleep c
     
+    # Everything before line 173 is correct
   end
   stop
 end
