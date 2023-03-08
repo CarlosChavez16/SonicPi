@@ -7,7 +7,7 @@ use_bpm 160
 use_synth :saw
 live_loop :main_theme do
   with_fx :distortion do
-    7.times do
+    8.times do
       play (notes [num])
       sleep (0.5)
       num = num + 1
