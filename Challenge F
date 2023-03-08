@@ -1,55 +1,13 @@
-#Challenge F
-num = 1 #start at 1!
+# Challenge F
+#variable to store the number
+num = 21
+c = 0.25
+
+use_synth :piano
 
 
-puts(num)
-sleep 0.5
-num = num + 1 #num = 1 + 1
-
-
-puts(num)
-sleep 0.5
-num = num + 1 #num = 2 + 1
-
-
-puts(num)
-sleep 0.5
-num = num + 1 #num = 3 + 1
-
-
-puts(num)
-sleep 0.5
-num = num + 1 #num = 4 + 1
-
-
-puts(num)
-sleep 0.5
-num = num + 1 #num = 5 + 1
-
-
-puts(num)
-sleep 0.5
-num = num + 1 #num = 6 + 1
-
-
-puts(num)
-sleep 0.5
-num = num + 1 #num = 7 + 1
-
-
-puts(num)
-sleep 0.5
-num = num + 1 #num = 8 + 1
-
-
-puts(num)
-sleep 0.5
-num = num + 1 #num = 9 + 1
-
-
-puts(num)
-sleep 0.5
-num = num + 1 #num = 10 + 1
-
-
-puts("HAPPY NEW YEAR!")
+87.times do
+  num = num + 1
+  play num
+  sleep c
+end
