@@ -4,28 +4,550 @@ lose_yourself = "C:/Users/Carlos Chavez/Downloads/lose_yourself.wav"
 
 
 sample lose_yourself
-sleep 29
+sleep 1
+
+y = 1.5
+
+x = 2
+
+m = 0.5
 
 c = 1
+
+r = 3
+
+o = 6
+
 use_bpm 130
-use_synth :piano
+use_synth :dtri
 
-play :a5
-sleep c
-play :c5
-sleep c
-play :a5
-sleep c
-play :a5
-sleep c
-play :a5
-sleep 1
-play :a5
-sleep c
-play :a5
-sleep c
-play :c5
-sleep c
 
+live_loop :FirstNote do
+  1.times do
+    play :c4
+    sleep c
+    play :f5
+    sleep c
+    play :d5
+    sleep c
+    play :c4
+    sleep c
+    
+    play :g5
+    sleep c
+    play :e5
+    sleep c
+    play :c5
+    sleep c
+    play :g5
+    sleep c
+    
+    play :c4
+    sleep c
+    play :f5
+    sleep c
+    play :d5
+    sleep x
+    
+    play :d5
+    sleep x
+    
+    play :c4
+    sleep m
+    play :c4
+    sleep m
+    play :c4
+    sleep m
+    play :g5
+    sleep m
+    
+    play :c4
+    sleep c
+    play :f5
+    sleep c
+    play :d5
+    sleep c
+    play :c4
+    sleep c
+    
+    play :g5
+    sleep c
+    play :e5
+    sleep c
+    play :c5
+    sleep c
+    play :g5
+    sleep c
+    
+    play :c4
+    sleep c
+    play :d5
+    sleep c
+    play :f5
+    sleep c
+    play :d5
+    sleep x
+    
+    
+    
+    
+    play :d5
+    sleep c
+    play :f4
+    sleep c
+    play :bb4
+    sleep c
+    play :d5
+    sleep c
+    
+    play :c5
+    sleep r
+    play :a4
+    sleep r
+    play :f4
+    sleep r
+    
+    play :bb4
+    sleep c
+    play :f4
+    sleep c
+    play :a4
+    sleep c
+    
+    play :g4
+    sleep x
+    play :d4
+    sleep x
+    play :c4
+    sleep x
+    
+    play :c4
+    sleep x
+    play :bb4
+    sleep x
+    
+    play :c4
+    sleep x
+    play :bb4
+    sleep x
+    
+    play :bb4
+    sleep c
+    play :a4
+    sleep c
+    
+    play :e5
+    sleep x
+    play :g4
+    sleep x
+    play :f4
+    sleep x
+    
+    play :bb4
+    sleep c
+    play :c4
+    sleep c
+    
+    
+    
+    
+    # Everything before line 107 is correct
+    
+  end
+  stop
+end
+
+live_loop :FirstNoteBackgroundNoise do
+  use_synth :dpulse
+  1.times do
+    play :d3
+    sleep c
+    play :e3
+    sleep c
+    play :a3
+    sleep x
+    
+    
+    play :c3
+    sleep c
+    play :e3
+    sleep c
+    play :g3
+    sleep x
+    
+    play :bb2
+    sleep c
+    play :f3
+    sleep c
+    play :a3
+    sleep x
+    
+    play :f3
+    sleep x
+    
+    play :d3
+    sleep c
+    play :e3
+    sleep c
+    play :a3
+    sleep x
+    
+    play :c3
+    sleep c
+    play :e3
+    sleep c
+    play :g3
+    sleep x
+    
+    play :c3
+    sleep c
+    play :e3
+    sleep c
+    play :g3
+    sleep x
+    
+    play :a3
+    sleep o
+    
+    play :d3
+    sleep c
+    play :f3
+    sleep c
+    play :a3
+    sleep x
+    
+    play :c3
+    sleep c
+    play :e3
+    sleep c
+    play :g3
+    sleep x
+    
+    play :bb2
+    sleep c
+    play :f3
+    sleep c
+    play :a3
+    sleep x
+    
+    play :a3
+    sleep r
+    
+    
+    play :g2
+    sleep c
+    play :d3
+    sleep c
+    play :g3
+    sleep c
+    play :bb3
+    sleep c
+    
+    play :f2
+    sleep c
+    play :c3
+    sleep c
+    play :f3
+    sleep c
+    play :a3
+    sleep c
+    
+    play :e2
+    sleep c
+    play :bb2
+    sleep c
+    play :d3
+    sleep x
+    
+    play :d3
+    sleep o
+    
+    play :a2
+    sleep c
+    play :e2
+    sleep c
+    play :g3
+    sleep x
+    
+    
+    
+    use_bpm 186
+    
+    play :a3
+    sleep y
+    play :a3
+    sleep y
+    play :a3
+    sleep y
+    play :a3
+    sleep y
+    
+    play :d3
+    sleep c
+    play :d3
+    sleep c
+    play :d3
+    sleep c
+    play :d3
+    sleep c
+    
+    play :a3
+    sleep y
+    play :a3
+    sleep y
+    play :a3
+    sleep y
+    play :a3
+    sleep y
+    
+    play :d3
+    sleep c
+    play :d3
+    sleep c
+    play :d3
+    sleep c
+    play :a3
+    sleep y
+    
+    play :g3
+    sleep c
+    
+    play :a3
+    sleep y
+    play :a3
+    sleep y
+    play :a3
+    sleep y
+    play :a3
+    sleep y
+    
+    play :d3
+    sleep c
+    play :d3
+    sleep c
+    play :d3
+    sleep c
+    play :d3
+    sleep c
+    
+    play :a3
+    sleep y
+    play :a3
+    sleep y
+    play :bb3
+    sleep c
+    play :a3
+    sleep c
+    
+    play :d3
+    sleep c
+    play :d3
+    sleep c
+    play :d3
+    sleep c
+    play :d3
+    sleep c
+    
+    play :a3
+    sleep y
+    play :a3
+    sleep y
+    play :a3
+    sleep y
+    play :a3
+    sleep y
+    
+    play :d3
+    sleep c
+    play :d3
+    sleep c
+    play :d3
+    sleep c
+    play :d3
+    sleep c
+    
+    play :a3
+    sleep y
+    play :a3
+    sleep y
+    play :a3
+    sleep y
+    play :a3
+    sleep y
+    
+    play :d3
+    sleep c
+    play :d3
+    sleep c
+    play :d3
+    sleep c
+    play :a3
+    sleep y
+    
+    play :g3
+    sleep c
+    
+    play :bb3
+    sleep y
+    play :bb3
+    sleep y
+    play :bb3
+    sleep y
+    play :bb3
+    sleep y
+    
+    
+    play :d3
+    sleep c
+    play :d3
+    sleep c
+    play :d3
+    sleep c
+    play :d3
+    sleep c
+    
+    play :bb3
+    sleep y
+    play :bb3
+    sleep y
+    play :c3
+    sleep c
+    play :bb3
+    sleep c
+    
+    play :d3
+    sleep c
+    play :d3
+    sleep c
+    play :d3
+    sleep c
+    play :d3
+    sleep c
+    
+    play :a3
+    sleep y
+    play :a3
+    sleep y
+    play :a3
+    sleep y
+    play :a3
+    sleep y
+    
+    play :d3
+    sleep c
+    play :d3
+    sleep c
+    play :d3
+    sleep c
+    play :d3
+    sleep c
+    
+    play :a3
+    sleep y
+    play :a3
+    sleep y
+    play :a3
+    sleep y
+    play :a3
+    sleep y
+    
+    play :d3
+    sleep c
+    play :d3
+    sleep c
+    play :d3
+    sleep c
+    play :a3
+    sleep y
+    
+    play :g3
+    sleep c
+    
+    play :bb3
+    sleep y
+    play :bb3
+    sleep y
+    play :bb3
+    sleep y
+    play :bb3
+    sleep y
+    
+    play :d3
+    sleep c
+    play :d3
+    sleep c
+    play :d3
+    sleep c
+    play :d3
+    sleep c
+    
+    play :bb3
+    sleep y
+    play :d3
+    sleep y
+    play :g3
+    sleep c
+    play :a3
+    sleep c
+    
+    play :bb3
+    sleep y
+    play :d3
+    sleep y
+    play :g3
+    sleep c
+    
+    play :a3
+    sleep y
+    play :g3
+    sleep c
+    
+    play :a3
+    sleep c
+    play :d3
+    sleep c
+    
+    
+    play :g3
+    sleep y
+    play :a3
+    sleep c
+    play :d3
+    sleep y
+    
+    
+    
+    
+    play :a3
+    sleep y
+    play :d3
+    sleep m
+    
+    play :a3
+    sleep y
+    play :a3
+    sleep y
+    play :d3
+    sleep m
+    play :d3
+    sleep c
+    
+    play :a3
+    sleep c
+    play :d3
+    sleep c
+    
+    play :g3
+    sleep c
+    play :a3
+    sleep c
+    play :d3
+    sleep c
+    
+    
+    # Everything before line 173 is correct
+  end
+  stop
+end
 
 
