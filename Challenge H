@@ -1,0 +1,48 @@
+use_bpm 120
+use_synth :chiplead
+
+define :teel do |n1,n2|
+  play n1
+  play n2
+  sleep 0.5
+end
+live_loop :start do
+  # MEASURE 1 ---------------------------
+  teel :a4, :a5
+  teel :a4, :a5
+  teel :c5, :c6
+  teel :a4, :a5
+  teel :d5, :d6
+  teel :a4, :a5
+  teel :e5, :e6
+  teel :d5, :d6
+  # MEASURE 2 ---------------------------
+  teel :c5, :c6
+  teel :c5, :c6
+  teel :e5, :e6
+  teel :c5, :c6
+  teel :g5, :g6
+  teel :c4, :c5
+  teel :e5, :e6
+  teel :c4, :c5
+  
+  # MEASURE 3 ---------------------------
+  teel :g4, :g5
+  teel :g4, :g5
+  teel :b4, :b5
+  teel :g4, :g5
+  teel :c5, :c6
+  teel :g4, :g5
+  teel :d5, :d6
+  teel :c5, :c6
+  
+  # MEASURE 4 ---------------------------
+  teel :f4, :f5
+  teel :f4, :f5
+  teel :a4, :a5
+  teel :f4, :f5
+  teel :c5, :c6
+  teel :f4, :f5
+  teel :c5, :c6
+  teel :b4, :b5
+end
