@@ -1,1 +1,46 @@
-
+use_bpm 182
+use_synth :organ_tonewheel
+live_loop :bassnotes do
+  12.times do
+    play :b2
+    sleep 0.5
+    play :a2
+    sleep 0.5
+    play :f2
+    sleep 0.5
+    play :b2
+    sleep 0.5
+    sleep 2
+    
+    play :b2
+    sleep 0.5
+    play :d3
+    sleep 0.5
+    play :es3
+    sleep 0.5
+    play :fs3
+    sleep 0.5
+    sleep 2
+    
+    play :b2
+    sleep 0.5
+    play :d3
+    sleep 0.5
+    play :es3
+    sleep 0.5
+    play :fs3
+    sleep 0.5
+    sleep 2
+    
+    play :b2
+    sleep 0.5
+    play :a2
+    sleep 0.5
+    play :f2
+    sleep 0.5
+    play :b2
+    sleep 0.5
+    sleep 2
+  end
+  stop
+end
