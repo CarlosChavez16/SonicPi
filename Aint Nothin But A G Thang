@@ -1,46 +1,40 @@
-use_bpm 182
+fade_out = "C:/Users/Carlos Chavez/Downloads/fade_out.wav"
+sample fade_out
+
+sleep 20
+
+
+
+drum_sample = "C:/Users/Carlos Chavez/Downloads/piano_drum.wav"
+sample drum_sample
+
+
+sleep 30.8
+
+piano_sample = "C:/Users/Carlos Chavez/Downloads/drum_AndPiano.wav"
+sample piano_sample , amp: 2.3
+
+
 use_synth :organ_tonewheel
-live_loop :bassnotes do
+use_bpm 189
+define :bass_notes do |a, b, c|
+  play :b2
+  sleep 0.5
+  play a
+  sleep 0.5
+  play b
+  sleep 0.5
+  play c
+  sleep 0.5
+  sleep 2
+end
+
+live_loop :bass_notes2 do
   12.times do
-    play :b2
-    sleep 0.5
-    play :a2
-    sleep 0.5
-    play :f2
-    sleep 0.5
-    play :b2
-    sleep 0.5
-    sleep 2
-    
-    play :b2
-    sleep 0.5
-    play :d3
-    sleep 0.5
-    play :es3
-    sleep 0.5
-    play :fs3
-    sleep 0.5
-    sleep 2
-    
-    play :b2
-    sleep 0.5
-    play :d3
-    sleep 0.5
-    play :es3
-    sleep 0.5
-    play :fs3
-    sleep 0.5
-    sleep 2
-    
-    play :b2
-    sleep 0.5
-    play :a2
-    sleep 0.5
-    play :f2
-    sleep 0.5
-    play :b2
-    sleep 0.5
-    sleep 2
+    bass_notes :a2, :f2, :b2
+    bass_notes :d3, :es3, :fs3
+    bass_notes :d3, :es3, :fs3
+    bass_notes :a2, :f2, :b2
   end
   stop
 end
