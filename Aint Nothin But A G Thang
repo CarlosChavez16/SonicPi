@@ -12,19 +12,19 @@ sample drum_sample
 sleep 30.8
 
 piano_sample = "C:/Users/Carlos Chavez/Downloads/drum_AndPiano.wav"
-sample piano_sample , amp: 2.3
+sample piano_sample , amp: 3
 
 
-use_synth :organ_tonewheel
+use_synth :fm
 use_bpm 189
 define :bass_notes do |a, b, c|
-  play :b2
+  play :b2, amp: 0.35
   sleep 0.5
-  play a
+  play a, amp: 0.35
   sleep 0.5
-  play b
+  play b, amp: 0.35
   sleep 0.5
-  play c
+  play c, amp: 0.35
   sleep 0.5
   sleep 2
 end
