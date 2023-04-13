@@ -1,36 +1,33 @@
 fade_out = "C:/Users/Carlos Chavez/Downloads/fade_out.wav"
-sample fade_out
+sample fade_out, amp: 1.5
 
 sleep 20
 
+piano_sample = "C:/Users/Carlos Chavez/Downloads/piano_drum.wav"
+sample piano_sample
+
+sleep 31
 
 
-drum_sample = "C:/Users/Carlos Chavez/Downloads/piano_drum.wav"
-sample drum_sample
-
-
-sleep 30.8
-
-piano_sample = "C:/Users/Carlos Chavez/Downloads/drum_AndPiano.wav"
-sample piano_sample , amp: 3
-
+drum_sample = "C:/Users/Carlos Chavez/Downloads/drum_AndPiano.wav"
+sample drum_sample , amp: 3
 
 use_synth :fm
 use_bpm 189
 define :bass_notes do |a, b, c|
-  play :b2, amp: 0.35
+  play :b2, amp: 0.5
   sleep 0.5
-  play a, amp: 0.35
+  play a, amp: 0.5
   sleep 0.5
-  play b, amp: 0.35
+  play b, amp: 0.5
   sleep 0.5
-  play c, amp: 0.35
+  play c, amp: 0.5
   sleep 0.5
   sleep 2
 end
 
 live_loop :bass_notes2 do
-  12.times do
+  13.times do
     bass_notes :a2, :f2, :b2
     bass_notes :d3, :es3, :fs3
     bass_notes :d3, :es3, :fs3
@@ -38,3 +35,11 @@ live_loop :bass_notes2 do
   end
   stop
 end
+
+sleep 80
+
+Fade2_out = "C:/Users/Carlos Chavez/Downloads/sound_effect.wav"
+sample Fade2_out
+
+
+
