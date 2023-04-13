@@ -36,7 +36,7 @@ live_loop :bass_notes2 do
   stop
 end
 
-sleep 80
+sleep 120
 
 Fade2_out = "C:/Users/Carlos Chavez/Downloads/sound_effect.wav"
 sample Fade2_out
