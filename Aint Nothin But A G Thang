@@ -12,6 +12,19 @@ sleep 31
 drum_sample = "C:/Users/Carlos Chavez/Downloads/drum_AndPiano.wav"
 sample drum_sample , amp: 3
 
+
+Lyrics = ["..,","One", "two", "three and to the fo"," Snopp Doggy Dogg and Dr. Dre is at the Do", "Ready to make an entrance", "So back on up", "Before I have to pull the strap out the cut", "Gimme the microphone first so I can bust like a bubble", "Compton and Long Beach together", "Now you know you in trouble", "Cause ain't nuthin' but a G thang", "baby", "Two loc'ed out G's going crazy", "Death Row is the label that pays me", "Unfadeadble so please don't try to fade this (Hell yeah)", "But, um, back to the lecture at hand", "Perfection is perfected so I'ma let let 'em understand", "From a young G's perspective", "And before me dig out a trick I have to find a contraceptive", "You never know", "She could be be earnin' her man and learnin' her man", "And at the same time burnin' her man", "Now, when she burnin', I'ma chill for a minute", "'Cause ain't no lovin' good enough to get burnt while I'm up in it (Yeah)", "And that's realer than Real Deal Holyfield", "And now you hookers and hoes know how I feel", "Well, if it's good enough to get broke off a proper chunck", "I'll take a small piece of some some of that funky stuff", "It's like this and like that and like this and a--- It's like this and like that and like this and a--- It's like this and like that and like this and a---", "Dre, creep to the mic like a phantom" ]
+voice = 0
+live_loop :Vocals do
+  31.times do
+    puts (Lyrics[voice] )
+    sleep(0.75)
+    voice = voice +1
+  end
+  stop
+end
+
+
 use_synth :fm
 use_bpm 189
 define :bass_notes do |a, b, c|
@@ -36,10 +49,8 @@ live_loop :bass_notes2 do
   stop
 end
 
-sleep 120
+sleep 190
 
 Fade2_out = "C:/Users/Carlos Chavez/Downloads/sound_effect.wav"
 sample Fade2_out
-
-
 
