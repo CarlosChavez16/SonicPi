@@ -6,8 +6,7 @@ sleep 20
 piano_sample = "C:/Users/Carlos Chavez/Downloads/piano_drum.wav"
 sample piano_sample
 
-sleep 31
-
+sleep 30.75
 
 drum_sample = "C:/Users/Carlos Chavez/Downloads/drum_AndPiano.wav"
 sample drum_sample , amp: 3
@@ -18,7 +17,7 @@ voice = 0
 live_loop :Vocals do
   31.times do
     puts (Lyrics[voice] )
-    sleep(0.75)
+    sleep(2)
     voice = voice +1
   end
   stop
@@ -53,4 +52,7 @@ sleep 190
 
 Fade2_out = "C:/Users/Carlos Chavez/Downloads/sound_effect.wav"
 sample Fade2_out
+
+
+
 
